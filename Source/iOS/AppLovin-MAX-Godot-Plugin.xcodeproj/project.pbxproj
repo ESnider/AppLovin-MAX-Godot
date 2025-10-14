@@ -46,8 +46,8 @@
 		6AD94ADC2AB4588000942DF0 /* AppLovinMAXGodotPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLovinMAXGodotPlugin.h; sourceTree = "<group>"; };
 		6AD94ADF2AB459F800942DF0 /* AppLovinMAXGodotManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLovinMAXGodotManager.h; sourceTree = "<group>"; };
 		6AD94AE02AB459F800942DF0 /* AppLovinMAXGodotManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppLovinMAXGodotManager.mm; sourceTree = "<group>"; };
-		84137A8F42864BB473A1E609 /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; sourceTree = "<group>"; };
-		D0843C60907DBA0790F78B62 /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.release.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		84137A8F42864BB473A1E609 /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		D0843C60907DBA0790F78B62 /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
