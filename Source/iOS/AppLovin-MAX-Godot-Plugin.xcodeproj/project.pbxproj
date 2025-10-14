@@ -31,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		28CD1B2A90864EA6C737C2FC /* Pods_AppLovinMAXGodotPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppLovinMAXGodotPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8F7C323143D5D98F13922F /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2478662AB465C400864F6E /* libAppLovinMAXGodotPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppLovinMAXGodotPlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA751402BC622E100FD643F /* NSObject+AppLovinMAXGodotPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+AppLovinMAXGodotPlugin.h"; path = "AppLovin-MAX-Godot-Plugin/Categories/NSObject+AppLovinMAXGodotPlugin.h"; sourceTree = SOURCE_ROOT; };
 		6AA751412BC622E100FD643F /* NSArray+AppLovinMAXGodotPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSArray+AppLovinMAXGodotPlugin.mm"; path = "AppLovin-MAX-Godot-Plugin/Categories/NSArray+AppLovinMAXGodotPlugin.mm"; sourceTree = SOURCE_ROOT; };
@@ -47,7 +46,8 @@
 		6AD94ADC2AB4588000942DF0 /* AppLovinMAXGodotPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLovinMAXGodotPlugin.h; sourceTree = "<group>"; };
 		6AD94ADF2AB459F800942DF0 /* AppLovinMAXGodotManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppLovinMAXGodotManager.h; sourceTree = "<group>"; };
 		6AD94AE02AB459F800942DF0 /* AppLovinMAXGodotManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppLovinMAXGodotManager.mm; sourceTree = "<group>"; };
-		B75084ECEF9540EFE9E1027C /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.release.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.release.xcconfig"; sourceTree = "<group>"; };
+		84137A8F42864BB473A1E609 /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		D0843C60907DBA0790F78B62 /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinMAXGodotPlugin.release.xcconfig"; path = "Target Support Files/Pods-AppLovinMAXGodotPlugin/Pods-AppLovinMAXGodotPlugin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0297C7D493D104E137153D61 /* Pods */ = {
+		1ADE5E4D6A64074FA2DAA5C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C8F7C323143D5D98F13922F /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */,
-				B75084ECEF9540EFE9E1027C /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */,
+				84137A8F42864BB473A1E609 /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */,
+				D0843C60907DBA0790F78B62 /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */,
 			);
 			name = Pods;
-			path = ../../Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		6ACD42F52AB670E3009F931C /* Categories */ = {
@@ -92,8 +92,8 @@
 			children = (
 				6AD94ACA2AB4537C00942DF0 /* AppLovin-MAX-Godot-Plugin */,
 				6AD94AC92AB4537C00942DF0 /* Products */,
-				0297C7D493D104E137153D61 /* Pods */,
 				8463883D41552057E4014273 /* Frameworks */,
+				1ADE5E4D6A64074FA2DAA5C0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,7 +225,7 @@
 /* Begin XCBuildConfiguration section */
 		6A24786D2AB465C400864F6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C8F7C323143D5D98F13922F /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */;
+			baseConfigurationReference = 84137A8F42864BB473A1E609 /* Pods-AppLovinMAXGodotPlugin.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
@@ -239,7 +239,7 @@
 					$PROJECT_DIR/../../godot,
 					$PROJECT_DIR/../../godot/platform/ios,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/godot/bin",
@@ -294,7 +294,7 @@
 		};
 		6A24786E2AB465C400864F6E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B75084ECEF9540EFE9E1027C /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */;
+			baseConfigurationReference = D0843C60907DBA0790F78B62 /* Pods-AppLovinMAXGodotPlugin.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
@@ -303,7 +303,7 @@
 					$PROJECT_DIR/../../godot,
 					$PROJECT_DIR/../../godot/platform/ios,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/godot/bin",

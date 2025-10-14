@@ -323,11 +323,30 @@ void AppLovinMAXGodotPlugin::initialize(String sdk_key, Dictionary metadata, Arr
 
     [_sdk.settings setExtraParameterForKey: @"applovin_godot_metadata" value: NSDICTIONARY(metadata).serializedString];
 
-    [_sdk initializeWithConfiguration: initConfig completionHandler:^(ALSdkConfiguration *configuration) {
+	NSLog(@"Eric's AppLovin native iOS code! About to do initializeWithConfiguration");
+#if 0 // GPT 5 recommended fix:
+	[_sdk initializeWithConfiguration:initConfig completionHandler:^(ALSdkConfiguration *configuration) {
+		_isSdkInitialized = true;
+		dispatch_async(dispatch_get_main_queue(),
+		^{
+			NSLog(@"Eric's AppLovin native iOS code! INSIDE OF completionHandler! NOW IN MAIN THREAD");
+			emit_signal(AppLovinMAXSignalSdkInitialization, get_sdk_configuration());
+			NSLog(@"Eric's AppLovin native iOS code! AFTER emit signal AppLovinMAXSignalSdkInitialization in MAIN THREAD");
+		});
+	}];
+#else
+	
+	
+	[_sdk initializeWithConfiguration: initConfig completionHandler:^(ALSdkConfiguration *configuration) {
         _isSdkInitialized = true;
-        
+		NSLog(@"Eric's AppLovin native iOS code! INSIDE OF completionHandler!");
+		NSLog(@"[THREAD] isMain=%d, current=%@", [NSThread isMainThread], [NSThread currentThread]);
+		NSLog(@"Eric's AppLovin native iOS code! about to emit signal AppLovinMAXSignalSdkInitialization");
         emit_signal(AppLovinMAXSignalSdkInitialization, get_sdk_configuration());
+		NSLog(@"Eric's AppLovin native iOS code! AFTER emit signal AppLovinMAXSignalSdkInitialization");
     }];
+#endif // end of old code
+	
 }
 
 bool AppLovinMAXGodotPlugin::is_initialized()
